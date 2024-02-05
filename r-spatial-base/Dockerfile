@@ -1,7 +1,7 @@
 ## Emacs, make this -*- mode: sh; -*-
 
 ## start with the Docker 'R-base' Debian-based image
-FROM r-base:4.1.0
+FROM r-base:4.2.3
 
 ## maintainer of this script
 MAINTAINER Alex Chubaty <alex.chubaty@gmail.com>
@@ -38,7 +38,7 @@ RUN apt-get install -y --no-install-recommends -t unstable \
       libxml2-dev \
       libxt-dev \
       netcdf-bin \
-      pandoc pandoc-citeproc \
+      pandoc \
       protobuf-compiler \
 ##      python-gdal \
       python3-gdal \
